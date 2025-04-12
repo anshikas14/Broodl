@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Hreo() {
+export default function Hero() {
   return (
     <div>
       
