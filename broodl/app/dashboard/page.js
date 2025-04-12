@@ -1,3 +1,5 @@
+import Main from "@/components/Main";
+
 export const metadata = {
     title: "Broodl ⋅ Dashboard",
   };
@@ -5,6 +7,8 @@ export const metadata = {
 
 export default function DashboardPage() {
     return (
-        <div>assssssss</div>
+        <Main>
+            
+        </Main>
     )
 }
