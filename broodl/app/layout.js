@@ -1,15 +1,11 @@
-import { Fugaz_One, Geist, Geist_Mono } from "next/font/google";
+import { Fugaz_One, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
+const opensans = Open_Sans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const fugaz = Fugaz_One({
   variable: "--font-geist-sans",
@@ -31,14 +27,13 @@ export default function RootLayout({ children }) {
   )
 
   const footer = (
-    <footer>
+    <footer className="p-4 sm:p-8">
 babyyyyyy
     </footer>
   )
   return (
     <html lang="en">
-      
-      <body className={ 'w-full max-w-[1000px] mx-auto text-sm sm:test-base min-h-screen flex flex-col ' + `${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={ 'w-full max-w-[1000px] mx-auto text-sm sm:test-base min-h-screen flex flex-col text-slate-800 ' + opensans.className}>
         {header}
         {children}
         {footer}
